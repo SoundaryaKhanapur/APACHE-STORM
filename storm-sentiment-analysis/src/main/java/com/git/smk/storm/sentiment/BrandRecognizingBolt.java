@@ -27,23 +27,7 @@ public static void main(String args[]) throws Exception  {
         String[] tokens = tokenizer.tokenize("i like google");
         String brand = Arrays.stream(tokens).filter(s->{return (s.equalsIgnoreCase("apple")||s.equalsIgnoreCase("google")||s.equalsIgnoreCase("windows"));}).findFirst().get();
         System.out.println(brand);
-       /* InputStream inputStreamNameFinder = new FileInputStream("./src/main/resources/en-ner-organization.bin");
-        TokenNameFinderModel model = new TokenNameFinderModel(inputStreamNameFinder);
-        NameFinderME nameFinderME = new NameFinderME(model);
-        List<Span> spans = Arrays.asList(nameFinderME.find(tokens));
-        //assertThat(spans.toString()).isEqualTo("[[0..1) person, [13..14) person, [20..21) person]");
-        List<String> names = new ArrayList<String>();
-        int k = 0;
-        for (Span s : spans) {
-            names.add("");
-            for (int index = s.getStart(); index < s.getEnd(); index++) {
-                names.set(k, names.get(k) + tokens[index]);
-            }
-            k++;
-        }
-        System.out.println(names);*/
-        //assertThat(names).contains("John","Leonard","Penny");
-    }
+          }
 
 @Override
 public void execute(Tuple tuple, BasicOutputCollector collector) {
