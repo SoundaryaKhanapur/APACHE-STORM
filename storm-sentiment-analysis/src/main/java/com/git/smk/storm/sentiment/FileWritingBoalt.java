@@ -40,7 +40,7 @@ public class FileWritingBoalt extends BaseBasicBolt{
 
 	@Override
 	public void declareOutputFields(OutputFieldsDeclarer arg0) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 	
