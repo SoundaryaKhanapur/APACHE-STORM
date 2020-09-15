@@ -5,7 +5,7 @@
 	<artifactId>storm-sentiment-analysis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
-		<jackson.version>2.9.7</jackson.version>
+		<jackson.version>2.11.2</jackson.version>
 	</properties>
 	<dependencies>
 		<dependency>
